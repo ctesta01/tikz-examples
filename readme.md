@@ -24,12 +24,42 @@ called `pdf2svg` on the output. For example, I run `pdf2svg limit_supremum_infim
 
 ## Examples 
 
-<a href="limit_supremum_infimum/limit_supremum_infimum.tex">
-<img src="limit_supremum_infimum/limit_supremum_infimum.svg" width='50%' />
+<center>
+<a href="2023/limit_supremum_infimum/limit_supremum_infimum.tex">
+<img src="2023/limit_supremum_infimum/limit_supremum_infimum.svg" width='75%' />
 </a>
+</center>
 
 Limit supremum and infimum illustrated. 
 
-<a href="continuity_and_differentiability/continuity_and_differentiability.tex">
-<img src="continuity_and_differentiability/continuity_and_differentiability.svg" width='50%' />
+--- 
+
+<center>
+<a href="2023/continuity_and_differentiability/continuity_and_differentiability.tex">
+<img src="2023/continuity_and_differentiability/continuity_and_differentiability.svg" width='50%' />
 </a>
+</center>
+
+Delta & epsilon as commonly used in defining continuity. 
+
+--- 
+
+<center>
+<a href="2023/cone/cone.tex">
+<img src="2023/cone/cone.svg" width='45%' />
+</a>
+</center>
+
+Example of a height 1, radius 1 cone. 
+
+Based off of responses here: <https://tex.stackexchange.com/questions/171169/how-to-draw-a-simple-cone-with-height-and-radius-with-tikz>
+
+--- 
+
+<center>
+<a href="2023/convexity/convexity.tex">
+<img src="2023/convexity/convexity.svg" width='45%' />
+</a>
+</center>
+
+Illustrating convexity.
