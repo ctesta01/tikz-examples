@@ -1,0 +1,29 @@
+\documentclass[tikz, margin=3.14mm]{standalone}
+\usepackage{pgfplots}
+
+\begin{document}
+\begin{tikzpicture}
+    % draw the function f(x) as a solid line
+    \draw[domain=-2:2, smooth, variable=\x, blue] plot ({\x},{sin(deg(\x)) + \x/2});
+    
+    % define x_0, \delta, f(x_0), and \epsilon
+    \def\xzero{0.5}
+    \pgfmathsetmacro\fxzero{sin(deg(\xzero)) + \xzero/2}
+    \def\d{0.5}
+    \def\e{0.61}
+    
+    % draw the vertical lines at x_0 and x_0+\delta, up to the function
+    \draw[dotted] (\xzero, -2) -- (\xzero, {\fxzero});
+    \draw[dotted] ({\xzero+\d}, -2) -- ({\xzero+\d}, {sin(deg(\xzero+\d)) + (\xzero+\d)/2});
+    
+    % draw the horizontal lines at f(x_0) and f(x_0)+\epsilon
+    \draw[dotted] (-2, {\fxzero}) -- ({\xzero}, {\fxzero});
+    \draw[dotted] (-2, {\fxzero+\e}) -- ({\xzero+\d}, {\fxzero+\e});
+    
+    % label x_0, \delta, f(x_0), and \epsilon
+    \node[below] at (\xzero, -2) {$x_0$};
+    \node[below] at ({\xzero+\d+.5}, -2) {$x_0 + \delta$};
+    \node[left] at (-2, {\fxzero}) {$f(x_0)$};
+    \node[left] at (-2, {\fxzero+\e}) {$f(x_0) + \epsilon$};
+\end{tikzpicture}
+\end{document} 
