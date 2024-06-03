@@ -24,6 +24,6 @@ called `pdf2svg` on the output. For example, I run `pdf2svg limit_supremum_infim
 
 ## Examples 
 
-[![](limit_supremum_infimum/limit_supremum_infimum.svg)](limit_supremum_infimum/limit_supremum_infimum.tex)
+[![](limit_supremum_infimum/limit_supremum_infimum.svg){width=70%}](limit_supremum_infimum/limit_supremum_infimum.tex)
 
 Limit supremum and infimum illustrated. 
