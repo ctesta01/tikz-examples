@@ -1,10 +1,12 @@
 \documentclass[tikz, margin=3.14mm]{standalone}
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
-\usetikzlibrary{calc}
+\usetikzlibrary{calc, backgrounds}
 
 \begin{document}
-\begin{tikzpicture}[scale=.75]
+\begin{tikzpicture}[scale=.75,
+    background rectangle/.style={fill=white},
+    show background rectangle]
     \draw[dashed] (0,0) arc (170:10:2cm and 0.4cm)coordinate[pos=0] (a);
     \draw (0,0) arc (-170:-10:2cm and 0.4cm) coordinate (b);
     \draw[densely dashed] 

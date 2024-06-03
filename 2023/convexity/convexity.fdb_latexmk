@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1717425907 "/Users/cht180/Documents/2024/tikz-examples/2023/convexity/convexity.tex" "convexity.pdf" "convexity" 1717425907 0
-  "/Users/cht180/Documents/2024/tikz-examples/2023/convexity/convexity.tex" 1717425905 759 e0f517904d574eb29ffc067b991023f3 ""
-  "/dev/null" 1717425907 0 d41d8cd98f00b204e9800998ecf8427e ""
+["pdflatex"] 1717426828 "/Users/cht180/Documents/2024/tikz-examples/2023/convexity/convexity.tex" "convexity.pdf" "convexity" 1717426828 0
+  "/Users/cht180/Documents/2024/tikz-examples/2023/convexity/convexity.tex" 1717426760 851 e2128201d782529e116ec6dab009aed1 ""
+  "/dev/null" 1717426828 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
@@ -26,6 +26,7 @@
   "/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex" 1601326656 35249 abd4adf948f960299a4b3d27c5dddf46 ""
   "/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex" 1673816307 22012 81b34a0aa8fa1a6158cc6220b00e4f10 ""
   "/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex" 1601326656 8893 e851de2175338fdf7c17f3e091d94618 ""
+  "/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarybackgrounds.code.tex" 1601326656 4572 4a19637ef65ce88ad2f2d5064b69541d ""
   "/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex" 1673816307 5628 dc0ee4ba7f3e40acae5600067ce833de ""
   "/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex" 1601326656 321 cdd11262840e01e25374a2d458f15e99 ""
   "/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex" 1601326656 1319 0b2de5126c6cbc295f0eb77f7344b34d ""
@@ -140,8 +141,8 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1693962617 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1693962557 7883467 f20614b3e9347c2ecaf98911cb196ce0 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "convexity.aux" 1717425907 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "convexity.tex" 1717425905 759 e0f517904d574eb29ffc067b991023f3 ""
+  "convexity.aux" 1717426828 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "convexity.tex" 1717426760 851 e2128201d782529e116ec6dab009aed1 ""
   (generated)
   "convexity.aux"
   "convexity.log"

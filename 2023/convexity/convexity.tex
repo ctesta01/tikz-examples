@@ -1,10 +1,12 @@
 \documentclass[tikz, margin=3.14mm]{standalone}
 \usepackage{pgfplots}
-\usetikzlibrary{arrows.meta}
+\usetikzlibrary{arrows.meta, backgrounds}
 \pgfplotsset{compat=1.18}
 
 \begin{document}
-\begin{tikzpicture}
+\begin{tikzpicture}[
+    background rectangle/.style={fill=white}, 
+    show background rectangle]
     % Define the two points A and B
     \coordinate (A) at (-.75, .5625);
     \coordinate (B) at (1.25, 1.5625);

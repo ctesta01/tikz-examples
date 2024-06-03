@@ -1,8 +1,10 @@
 \documentclass[tikz, margin=3.14mm]{standalone}
 \usepackage{pgfplots}
-
+\usetikzlibrary{backgrounds}
 \begin{document}
-\begin{tikzpicture}
+\begin{tikzpicture}[
+    background rectangle/.style={fill=white},
+    show background rectangle]
     % draw the function f(x) as a solid line
     \draw[domain=-2:2, smooth, variable=\x, blue] plot ({\x},{sin(deg(\x)) + \x/2});
     

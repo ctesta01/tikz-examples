@@ -1,0 +1,18 @@
+\documentclass[tikz, margin=3.14mm]{standalone}
+\usetikzlibrary{cd, backgrounds}
+
+% advice to use pagecolor{white} from:
+% https://tex.stackexchange.com/questions/529903/tikzcd-crossing-over-background-color 
+\pagecolor{white}
+
+% advice on using column sep = normal for tikz-cd in a standalone from:
+% https://tex.stackexchange.com/questions/499162/tikzcd-incompatible-with-standalone-document-class 
+
+\begin{document}
+\begin{tikzcd}[column sep=normal,
+    background color=white]
+    X_n \stackrel{a.s.}{\longrightarrow} X \arrow[Rightarrow, dr] & & \\
+    & X_n \stackrel{p}{\longrightarrow} X \arrow[Rightarrow, r] &  X_n \stackrel{d}{\longrightarrow} X \\ 
+    X_n \stackrel{\mathcal L_p}{\longrightarrow} X \arrow[Rightarrow, ur] & 
+\end{tikzcd}
+\end{document}

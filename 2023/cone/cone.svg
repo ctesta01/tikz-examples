@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="101.951" height="110.953" viewBox="0 0 101.951 110.953">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="110.53" height="119.532" viewBox="0 0 110.53 119.532">
 <defs>
 <g>
 <g id="glyph-0-0">
@@ -7,15 +7,16 @@
 </g>
 </g>
 </defs>
-<path fill="none" stroke-width="0.3985" stroke-linecap="butt" stroke-linejoin="miter" stroke="rgb(0%, 0%, 0%)" stroke-opacity="1" stroke-dasharray="2.98883 2.98883" stroke-miterlimit="10" d="M 0.0015625 -0.001625 C 4.079688 4.623375 26.130469 7.713219 49.259375 6.896812 C 66.860938 6.275719 80.646094 3.521812 83.747656 -0.001625 " transform="matrix(1, 0, 0, -1, 9.1, 94.139)"/>
-<path fill="none" stroke-width="0.3985" stroke-linecap="butt" stroke-linejoin="miter" stroke="rgb(0%, 0%, 0%)" stroke-opacity="1" stroke-miterlimit="10" d="M 0.0015625 -0.001625 C 4.079688 -4.626625 26.130469 -7.712563 49.259375 -6.900063 C 66.860938 -6.278969 80.646094 -3.521156 83.747656 -0.001625 " transform="matrix(1, 0, 0, -1, 9.1, 94.139)"/>
-<path fill="none" stroke-width="0.3985" stroke-linecap="butt" stroke-linejoin="miter" stroke="rgb(0%, 0%, 0%)" stroke-opacity="1" stroke-dasharray="2.98883 1.99255" stroke-miterlimit="10" d="M 41.876562 85.041344 L 41.876562 -0.001625 L 83.751563 -0.001625 " transform="matrix(1, 0, 0, -1, 9.1, 94.139)"/>
+<path fill-rule="nonzero" fill="rgb(100%, 100%, 100%)" fill-opacity="1" d="M 8.898438 110.632812 L 8.898438 8.898438 L 101.628906 8.898438 L 101.628906 110.632812 Z M 8.898438 110.632812 "/>
+<path fill="none" stroke-width="0.3985" stroke-linecap="butt" stroke-linejoin="miter" stroke="rgb(0%, 0%, 0%)" stroke-opacity="1" stroke-dasharray="2.98883 2.98883" stroke-miterlimit="10" d="M 0.001625 -0.0006875 C 4.075844 4.624313 26.130531 7.714156 49.259437 6.89775 C 66.861 6.276656 80.646156 3.518844 83.747719 -0.0006875 " transform="matrix(1, 0, 0, -1, 13.389, 98.429)"/>
+<path fill="none" stroke-width="0.3985" stroke-linecap="butt" stroke-linejoin="miter" stroke="rgb(0%, 0%, 0%)" stroke-opacity="1" stroke-miterlimit="10" d="M 0.001625 -0.0006875 C 4.075844 -4.625687 26.130531 -7.715531 49.259437 -6.899125 C 66.861 -6.278031 80.646156 -3.520219 83.747719 -0.0006875 " transform="matrix(1, 0, 0, -1, 13.389, 98.429)"/>
+<path fill="none" stroke-width="0.3985" stroke-linecap="butt" stroke-linejoin="miter" stroke="rgb(0%, 0%, 0%)" stroke-opacity="1" stroke-dasharray="2.98883 1.99255" stroke-miterlimit="10" d="M 41.876625 85.042281 L 41.876625 -0.0006875 L 83.751625 -0.0006875 " transform="matrix(1, 0, 0, -1, 13.389, 98.429)"/>
 <g fill="rgb(0%, 0%, 0%)" fill-opacity="1">
-<use xlink:href="#glyph-0-0" x="54.495" y="54.188"/>
+<use xlink:href="#glyph-0-0" x="58.785" y="58.477"/>
 </g>
 <g fill="rgb(0%, 0%, 0%)" fill-opacity="1">
-<use xlink:href="#glyph-0-0" x="69.796" y="90.62"/>
+<use xlink:href="#glyph-0-0" x="74.085" y="94.909"/>
 </g>
-<path fill="none" stroke-width="0.3985" stroke-linecap="butt" stroke-linejoin="miter" stroke="rgb(0%, 0%, 0%)" stroke-opacity="1" stroke-miterlimit="10" d="M 41.876562 4.252281 L 46.064062 4.252281 L 46.064062 -0.001625 " transform="matrix(1, 0, 0, -1, 9.1, 94.139)"/>
-<path fill="none" stroke-width="0.3985" stroke-linecap="butt" stroke-linejoin="miter" stroke="rgb(0%, 0%, 0%)" stroke-opacity="1" stroke-miterlimit="10" d="M 0.0015625 -0.001625 L 41.876562 85.041344 L 83.751563 -0.001625 " transform="matrix(1, 0, 0, -1, 9.1, 94.139)"/>
+<path fill="none" stroke-width="0.3985" stroke-linecap="butt" stroke-linejoin="miter" stroke="rgb(0%, 0%, 0%)" stroke-opacity="1" stroke-miterlimit="10" d="M 41.876625 4.253219 L 46.064125 4.253219 L 46.064125 -0.0006875 " transform="matrix(1, 0, 0, -1, 13.389, 98.429)"/>
+<path fill="none" stroke-width="0.3985" stroke-linecap="butt" stroke-linejoin="miter" stroke="rgb(0%, 0%, 0%)" stroke-opacity="1" stroke-miterlimit="10" d="M 0.001625 -0.0006875 L 41.876625 85.042281 L 83.751625 -0.0006875 " transform="matrix(1, 0, 0, -1, 13.389, 98.429)"/>
 </svg>

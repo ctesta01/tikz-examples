@@ -1,0 +1,28 @@
+\documentclass[tikz, margin=3.14mm]{standalone}
+\usepackage{pgfplots}
+\usetikzlibrary{backgrounds}
+
+\begin{document}
+\begin{tikzpicture}[
+    background rectangle/.style={fill=white}, 
+    show background rectangle,
+    scale=0.5]
+
+    % Draw the axes
+    \draw[->] (-10,0) -- (10,0) node[right] {$x$};
+    \draw[->] (0,-10) -- (0,10) node[above] {$y$};
+  
+    % Draw several nested dotted ovals (level sets of f(x, y))
+    \foreach \a in {2,4,...,8} {
+      \draw[dashed] (0,0) ellipse ({\a} and {\a/2});
+    }
+  
+    % Draw a cubic function g(x) in red
+    \draw[red, domain=-3:3, smooth] plot (\x, {0.5*\x^3 - \x});
+  
+    % Optionally, label the functions
+    \node at (8,4) {$f(x,y) = x^2 + \displaystyle\left( \frac{y}{2} \right)^2 $};
+    \node[red] at (4,-5) {$g(x) = 0.5x^3 - x$};
+  
+  \end{tikzpicture}
+\end{document}
