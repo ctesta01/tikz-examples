@@ -129,7 +129,7 @@ Diagram describing the role of statistical methods in the scientific process.
 
 <p align="center">
 <a href="2023/pr_density_of_linear_model/pr_density_of_linear_model.tex">
-<img align='center' src="2023/pr_density_of_linear_model/pr_density_of_linear_model.svg" width='45%' />
+<img align='center' src="2023/pr_density_of_linear_model/pr_density_of_linear_model.png" width='45%' />
 </a>
 </p>
 
@@ -139,7 +139,7 @@ Probability density in a linear model.
 
 <p align="center">
 <a href="2023/normal_equation_projection/normal_equation_projection.tex">
-<img align='center' src="2023/normal_equation_projection/normal_equation_projection.svg" width='45%' />
+<img align='center' src="2023/normal_equation_projection/normal_equation_projection.png" width='45%' />
 </a>
 </p>
 
@@ -149,7 +149,7 @@ Regression viewed as projection.
 
 <p align="center">
 <a href="2023/residual_decompositions/residual_decomposition.tex">
-<img align='center' src="2023/residual_decompositions/residual_decomposition.svg" width='45%' />
+<img align='center' src="2023/residual_decompositions/residual_decomposition.png" width='45%' />
 </a>
 </p>
 
@@ -220,7 +220,7 @@ Mathematical lineage of one of the faculty I work with.
 
 <p align="center">
 <a href="2023/ellipse_and_vectors/ellipse_and_vectors.tex">
-<img align='center' src="2023/ellipse_and_vectors/ellipse_and_vectors.svg" width='75%' />
+<img align='center' src="2023/ellipse_and_vectors/ellipse_and_vectors.png" width='75%' />
 </a>
 </p>
 
