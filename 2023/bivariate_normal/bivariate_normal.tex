@@ -2,9 +2,10 @@
 \usepackage{amsmath}
 \usepackage{pgfplots}
 \pgfplotsset{compat=newest}
+\usetikzlibrary{backgrounds}
 
 \begin{document}
-\begin{tikzpicture}
+\begin{tikzpicture}[background rectangle/.style={fill=white}, show background rectangle,]
 
 \begin{axis}[
     colormap/viridis,

@@ -1,10 +1,11 @@
 \documentclass[tikz,border=10pt]{standalone}
 \usepackage{tikz-3dplot}
+\usetikzlibrary{backgrounds}
 
 \begin{document}
 
 \tdplotsetmaincoords{60}{110}
-\begin{tikzpicture}[scale=2, tdplot_main_coords]
+\begin{tikzpicture}[scale=2, tdplot_main_coords, background rectangle/.style={fill=white}, show background rectangle,]
 
     % Draw minor grid lines (0.2 step)
 

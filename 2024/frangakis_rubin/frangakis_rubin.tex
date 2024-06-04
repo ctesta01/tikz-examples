@@ -1,7 +1,9 @@
 \documentclass[tikz, margin=3.14mm]{standalone}
+\usetikzlibrary{backgrounds}
 
 \begin{document}
-\begin{tikzpicture}[scale=2, yscale=.85, every node/.style={align=left}]
+\begin{tikzpicture}[scale=2, yscale=.85, every node/.style={align=left}, 
+    background rectangle/.style={fill=white}, show background rectangle]
 
 % nodes --- 
 \node at (0,0) {principal stratum \\ of subject $i$};

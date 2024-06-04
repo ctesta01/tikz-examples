@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1717465360 "/Users/cht180/Documents/2024/tikz-examples/2024/stratified_interference/stratified_interference.tex" "stratified_interference.pdf" "stratified_interference" 1717465361 0
-  "/Users/cht180/Documents/2024/tikz-examples/2024/stratified_interference/stratified_interference.tex" 1717465358 1803 143c0ddb500e8756332eeaee2c848da2 ""
-  "/dev/null" 1717465360 0 d41d8cd98f00b204e9800998ecf8427e ""
+["pdflatex"] 1717521901 "/Users/cht180/Documents/2024/tikz-examples/2024/stratified_interference/stratified_interference.tex" "stratified_interference.pdf" "stratified_interference" 1717521902 0
+  "/Users/cht180/Documents/2024/tikz-examples/2024/stratified_interference/stratified_interference.tex" 1717521898 1903 db471b3519e0ab378aafc1239ec1771f ""
+  "/dev/null" 1717521901 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
@@ -26,6 +26,7 @@
   "/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex" 1601326656 35249 abd4adf948f960299a4b3d27c5dddf46 ""
   "/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex" 1673816307 22012 81b34a0aa8fa1a6158cc6220b00e4f10 ""
   "/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex" 1601326656 8893 e851de2175338fdf7c17f3e091d94618 ""
+  "/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarybackgrounds.code.tex" 1601326656 4572 4a19637ef65ce88ad2f2d5064b69541d ""
   "/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex" 1608933718 11518 738408f795261b70ce8dd47459171309 ""
   "/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex" 1673816307 186782 af500404a9edec4d362912fe762ded92 ""
   "/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex" 1601326656 32995 ac577023e12c0e4bd8aa420b2e852d1a ""
@@ -96,8 +97,8 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1693962617 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1693962557 7883467 f20614b3e9347c2ecaf98911cb196ce0 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "stratified_interference.aux" 1717465360 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "stratified_interference.tex" 1717465358 1803 143c0ddb500e8756332eeaee2c848da2 ""
+  "stratified_interference.aux" 1717521902 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "stratified_interference.tex" 1717521898 1903 db471b3519e0ab378aafc1239ec1771f ""
   (generated)
   "stratified_interference.aux"
   "stratified_interference.log"

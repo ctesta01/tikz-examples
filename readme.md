@@ -22,33 +22,54 @@ I render most of them with `pdflatex` and then to create a small-filesize
 image version that is readily shareable on the web, I use a command-line tool
 called `pdf2svg` on the output. For example, I run `pdf2svg limit_supremum_infimum.pdf limit_supremum_infimum.svg` to produce the svg file version. 
 
+### Backgrounds 
+
+Most of the examples I share will have something like this added to them: 
+
+```tex
+% \documentclass and the rest of the header
+\usetikzlibrary{backgrounds}
+
+\begin{document} 
+\begin{tikzpicture}[background rectangle/.style={fill=white}, show background rectangle]
+% ... 
+\end{tikzpicture}
+\end{document}
+```
+
+The inclusion of a white rectangle in the background is, in almost all cases, just so that the 
+rendered diagrams can be easily seen in this readme while browsing GitHub in dark mode, or 
+while viewing the readme in other software with a dark mode such as VS Code. The background
+is totally optional, and removing the tikz library and tikzpicture style settings 
+described above should remove it if you need to. 
+
 ## Examples 
 
-<center>
+<p align="center">
 <a href="2023/limit_supremum_infimum/limit_supremum_infimum.tex">
 <img align='center' src="2023/limit_supremum_infimum/limit_supremum_infimum.svg" width='75%' />
 </a>
-</center>
+</p>
 
 Limit supremum and infimum illustrated. 
 
 --- 
 
-<center>
+<p align="center">
 <a href="2023/continuity_and_differentiability/continuity_and_differentiability.tex">
 <img align='center' src="2023/continuity_and_differentiability/continuity_and_differentiability.svg" width='50%' />
 </a>
-</center>
+</p>
 
 Delta & epsilon as commonly used in defining continuity. 
 
 --- 
 
-<center>
+<p align="center">
 <a href="2023/cone/cone.tex">
 <img align='center' src="2023/cone/cone.svg" width='45%' />
 </a>
-</center>
+</p>
 
 Example of a height 1, radius 1 cone. 
 
@@ -56,272 +77,274 @@ Based off of responses here: <https://tex.stackexchange.com/questions/171169/how
 
 --- 
 
-<center>
+<p align="center">
 <a href="2023/convexity/convexity.tex">
 <img align='center' src="2023/convexity/convexity.svg" width='45%' />
 </a>
-</center>
+</p>
 
 Illustrating convexity.
 
 --- 
 
-<center>
+<p align="center">
 <a href="2023/lagrange_multipliers/lagrange_multipliers.tex">
 <img align='center' src="2023/lagrange_multipliers/lagrange_multipliers.svg" width='85%' />
 </a>
-</center>
+</p>
 
-Optimization subject to a constraint, e.g., minimizing $f$ subject to the constraint $g$. 
+Optimization subject to a constraint, e.g., minimizing f subject to the constraint g. 
 
 --- 
 
-<center>
+<p align="center">
 <a href="2023/convergence_implications/convergence_implications.tex">
 <img align='center' src="2023/convergence_implications/convergence_implications.svg" width='85%' />
 </a>
-</center>
+</p>
 
 The implication graph of different kinds of asymptotic convergence.
 
 --- 
 
-<center>
+<p align="center">
 <a href="2023/intersection/intersection.tex">
 <img align='center' src="2023/intersection/intersection.svg" width='45%' />
 </a>
-</center>
+</p>
 
 Definition of intersection.
 
 --- 
 
-<center>
+<p align="center">
 <a href="2023/scientific_process/scientific_process.tex">
 <img align='center' src="2023/scientific_process/scientific_process.svg" width='45%' />
 </a>
-</center>
+</p>
 
 Diagram describing the role of statistical methods in the scientific process.
 
 --- 
 
-<center>
+<p align="center">
 <a href="2023/pr_density_of_linear_model/pr_density_of_linear_model.tex">
 <img align='center' src="2023/pr_density_of_linear_model/pr_density_of_linear_model.svg" width='45%' />
 </a>
-</center>
+</p>
 
 Probability density in a linear model.
 
 --- 
 
-<center>
+<p align="center">
 <a href="2023/normal_equation_projection/normal_equation_projection.tex">
 <img align='center' src="2023/normal_equation_projection/normal_equation_projection.svg" width='45%' />
 </a>
-</center>
+</p>
 
 Regression viewed as projection.
 
 --- 
 
-<center>
+<p align="center">
 <a href="2023/residual_decompositions/residual_decomposition.tex">
 <img align='center' src="2023/residual_decompositions/residual_decomposition.svg" width='45%' />
 </a>
-</center>
+</p>
 
 Decomposing total sum of squares into sum of squared errors and regression sum of squares.
 
 --- 
 
-<center>
+<p align="center">
 <a href="2023/lasso/lasso.tex">
 <img align='center' src="2023/lasso/lasso.svg" width='45%' />
 </a>
-</center>
+</p>
 
 LASSO penalization.
 
 --- 
 
-<center>
+<p align="center">
 <a href="2023/time_dependent_exposures1/time_dependent_exposures1.tex">
 <img align='center' src="2023/time_dependent_exposures1/time_dependent_exposures1.svg" width='45%' />
 </a>
-</center>
+</p>
 
 Time-varying confounding as per the 2000 paper on marginal structural models by Hernán, Brumback, and Robins.
 
 --- 
 
-<center>
+<p align="center">
 <a href="2023/converging_normals/converging_normals.tex">
 <img align='center' src="2023/converging_normals/converging_normals.svg" width='45%' />
 </a>
-</center>
+</p>
 
 Convergence in distribution. 
 
 --- 
 
-<center>
+<p align="center">
 <a href="2023/semidefiniteness/semidefiniteness.tex">
 <img align='center' src="2023/semidefiniteness/semidefiniteness.svg"  width='45%' />
 </a>
-</center>
+</p>
 
 Semidefiniteness. 
 
 --- 
 
-<center>
+<p align="center">
 <a href="2023/geometric_sum/geometric_sum.tex">
 <img align='center' src="2023/geometric_sum/geometric_sum.svg" width='85%' />
 </a>
-</center>
+</p>
 
 Geometric random variables model the probability of getting k failures before the rth success. 
 
 --- 
 
-<center>
+<p align="center">
 <a href="2023/math_lineage/math_lineage.tex">
 <img align='center' src="2023/math_lineage/math_lineage.svg" width='100%' />
 </a>
-</center>
+</p>
 
 Mathematical lineage of one of the faculty I work with. 
 
 --- 
 
 
-<center>
+<p align="center">
 <a href="2023/ellipse_and_vectors/ellipse_and_vectors.tex">
 <img align='center' src="2023/ellipse_and_vectors/ellipse_and_vectors.svg" width='75%' />
 </a>
-</center>
+</p>
 
 Major and minor axes of the ellipse described by the data covariance. 
 
 --- 
 
-<center>
+<p align="center">
 <a href="2023/matrix_and_scatter/standalone_scatter_with_marginal_histograms.tex">
 <img align='center' src="2023/matrix_and_scatter/standalone_scatter_with_marginal_histograms.svg" width='45%' />
 </a>
-</center>
+</p>
 
 Marginal histograms. 
 
 --- 
 
-<center>
+<p align="center">
 <a href="2023/determinant_and_rotation_3d/determinant_3d.tex">
 <img align='center' src="2023/determinant_and_rotation_3d/determinant_3d.svg" width='45%' />
 </a>
-</center>
+</p>
 
 Rotation in 3D. 
 
 --- 
 
-<center>
+<p align="center">
 <a href="2023/bivariate_normal/bivariate_normal.tex">
 <img align='center' src="2023/bivariate_normal/bivariate_normal.svg" width='55%' />
 </a>
-</center>
+</p>
 
 Bivariate normal distribution. 
 
 --- 
 
-<center>
+<p align="center">
 <a href="2023/covariance/covariance.tex">
-<img align='center' src="2023/covariance/covariance.svg" width='85%' />
+<img align='center' src="2023/covariance/covariance.svg" style="background-color: white;" width='85%' />
 </a>
-</center>
+</p>
 
 Diagram of a covariance matrix. 
 
+\* I think this one may have compilation issues, just fair warning.
+
 --- 
 
-<center>
+<p align="center">
 <a href="2024/log_likelihood/figure.tex">
 <img align='center' src="2024/log_likelihood/figure.svg" width='55%' />
 </a>
-</center>
+</p>
 
 A log-likelihood with an inclusive boundary. 
 
 --- 
 
-<center>
-<a href="2024/samples_epsilon_away/figure2.tex">
-<img align='center' src="2024/samples_epsilon_away/figure2.svg" width='85%' />
+<p align="center">
+<a href="2024/samples_epsilon_away/samples_epsilon_away.tex">
+<img align='center' src="2024/samples_epsilon_away/samples_epsilon_away.svg" width='65%' />
 </a>
-</center>
+</p>
 
-A log-likelihood with an inclusive boundary. 
+Samples that are epsilon/sqrt(n) away from their limits, -theta to theta. 
 
 --- 
 
-<center>
+<p align="center">
 <a href="2024/ternary_tree/ternary_tree.tex">
-<img align='center' src="2024/ternary_tree/ternary_tree.svg" width='85%' />
+<img align='center' src="2024/ternary_tree/ternary_tree.svg" width='75%' />
 </a>
-</center>
+</p>
 
-A log-likelihood with an inclusive boundary. 
+A ternary tree. 
 
 --- 
 
-<center>
+<p align="center">
 <a href="2024/graph_traversal/graph_traversal.tex">
-<img align='center' src="2024/graph_traversal/graph_traversal.svg" width='85%' />
+<img align='center' src="2024/graph_traversal/graph_traversal.svg" width='75%' />
 </a>
-</center>
+</p>
 
-A log-likelihood with an inclusive boundary. 
+Graph traversal. 
 
 ---
 
-<center>
-<a href="2024/frangakis_rubin/posttreatment.tex">
-<img align='center' src="2024/frangakis_rubin/posttreatment.svg" width='100%' />
+<p align="center">
+<a href="2024/frangakis_rubin/frangakis_rubin.tex">
+<img align='center' src="2024/frangakis_rubin/frangakis_rubin.svg" width='80%' />
 </a>
-</center>
+</p>
 
 A table from a paper by Frangakis and Rubin on principal stratification. 
 
 ---
 
-<center>
+<p align="center">
 <a href="2024/posttreatment/posttreatment.tex">
-<img align='center' src="2024/posttreatment/posttreatment.svg" width='100%' />
+<img align='center' src="2024/posttreatment/posttreatment.svg" width='70%' />
 </a>
-</center>
+</p>
 
 Censoring due to death dependent on posttreatment. 
 
 --- 
 
-<center>
+<p align="center">
 <a href="2024/stratified_interference/stratified_interference.tex">
-<img align='center' src="2024/stratified_interference/stratified_interference.svg" width='100%' />
+<img align='center' src="2024/stratified_interference/stratified_interference.svg" width='50%' />
 </a>
-</center>
+</p>
 
 Stratified interference. 
 
 --- 
 
-<center>
+<p align="center">
 <a href="2024/interference_effects/interference_effects.tex">
-<img align='center' src="2024/interference_effects/interference_effects.svg" width='100%' />
+<img align='center' src="2024/interference_effects/interference_effects.svg" width='80%' />
 </a>
-</center>
+</p>
 
 Different causal estimators in the presence of partial/stratified interference. 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.5)  3 JUN 2024 21:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.5)  4 JUN 2024 13:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -301,15 +301,15 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./posttreatment.aux) ) 
 Here is how much of TeX's memory you used:
- 12482 strings out of 476025
- 262725 string characters out of 5790018
+ 12485 strings out of 476025
+ 262760 string characters out of 5790018
  1853388 words of memory out of 5000000
- 32738 multiletter control sequences out of 15000+600000
- 512894 words of font info for 34 fonts, out of 8000000 for 9000
+ 32740 multiletter control sequences out of 15000+600000
+ 513192 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 117i,7n,118p,488b,596s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
-Output written on posttreatment.pdf (1 page, 38508 bytes).
+ 117i,7n,118p,488b,614s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
+Output written on posttreatment.pdf (1 page, 31101 bytes).
 PDF statistics:
  26 PDF objects out of 1000 (max. 8388607)
  16 compressed objects within 1 object stream

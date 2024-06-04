@@ -3,11 +3,13 @@
 \usepackage{xcolor}
 \usepackage{tikz}
 \usepackage{pgfplots}
-\usetikzlibrary{patterns}
+\usetikzlibrary{patterns, backgrounds}
 
 \begin{document}
 
-\begin{tikzpicture}
+\begin{tikzpicture}[
+  background rectangle/.style={fill=white}, show background rectangle
+]
 \begin{axis}[
   axis lines = left,
   xlabel = \( \theta \),

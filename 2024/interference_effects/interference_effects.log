@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.5)  3 JUN 2024 21:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.5)  4 JUN 2024 13:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -256,10 +256,14 @@ File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )))
 \sa@box=\box62
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarybackgrounds.code.tex
+File: tikzlibrarybackgrounds.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@layerbox@background=\box63
+\pgf@layerboxsaved@background=\box64
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count283
-\l__pdf_internal_box=\box63
+\l__pdf_internal_box=\box65
 )
 
 LaTeX Warning: Unused global option(s):
@@ -286,7 +290,7 @@ LaTeX Font Info:    ... okay on input line 4.
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count284
 \scratchdimen=\dimen193
-\scratchbox=\box64
+\scratchbox=\box66
 \nofMPsegments=\count285
 \nofMParguments=\count286
 \everyMPshowfont=\toks30
@@ -302,11 +306,11 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 13.
+(Font)              <12> on input line 14.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 13.
+(Font)              <8> on input line 14.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 13.
+(Font)              <6> on input line 14.
 
 Missing character: There is no - in font nullfont!
 Missing character: There is no 3 in font nullfont!
@@ -314,15 +318,15 @@ Missing character: There is no 3 in font nullfont!
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./interference_effects.aux) ) 
 Here is how much of TeX's memory you used:
- 12650 strings out of 476025
- 264403 string characters out of 5790018
+ 12735 strings out of 476025
+ 267062 string characters out of 5790018
  1861388 words of memory out of 5000000
- 32894 multiletter control sequences out of 15000+600000
+ 32976 multiletter control sequences out of 15000+600000
  516858 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 117i,7n,118p,491b,934s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,7n,118p,491b,940s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
-Output written on interference_effects.pdf (1 page, 45933 bytes).
+Output written on interference_effects.pdf (1 page, 45972 bytes).
 PDF statistics:
  31 PDF objects out of 1000 (max. 8388607)
  19 compressed objects within 1 object stream

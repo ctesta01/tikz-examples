@@ -1,7 +1,8 @@
 \documentclass[tikz, border=1mm]{standalone}
+\usetikzlibrary{backgrounds}
 
 \begin{document}
-\begin{tikzpicture}
+\begin{tikzpicture}[background rectangle/.style={fill=white}, show background rectangle,]
 
     % Draw minor grid lines (0.2 step)
     \draw[gray!30, ultra thin, step=0.2] (-.5,-.5) grid (1.5,1.5);

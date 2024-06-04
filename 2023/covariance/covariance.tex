@@ -32,7 +32,8 @@
     },
     varstyle/.style={fill=red!20},
     covstyle/.style={fill=blue!20},
-    heatmap/.style={minimum size=0.6em, anchor=center}
+    heatmap/.style={minimum size=0.6em, anchor=center},
+    background rectangle/.style={fill=white}, show background rectangle
 ]
 
 
@@ -48,7 +49,7 @@
 
 \node [left=0.25cm of covariance, yscale=-1,
   ] (data)
-  {\includegraphics[height=5.8em]{figures/covariance/heatmap_image/heatmap_image.pdf}};
+  {\includegraphics[height=5.8em]{heatmap_image/heatmap_image.pdf}};
   
 \node[above=-.5cm of data] {$X^T$};
 
@@ -58,7 +59,7 @@
   rotate = 270,
   anchor = center,
   ] (data2)
-  {\includegraphics[width=8cm]{figures/covariance/heatmap_image/heatmap_image.pdf}};
+  {\includegraphics[width=8cm]{heatmap_image/heatmap_image.pdf}};
   
 \node[right=0.05cm of data2, shift={(1.25,4cm)}, align=left] {Original Data,\\$X$};
 

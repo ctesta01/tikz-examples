@@ -1,9 +1,9 @@
 \documentclass[tikz,border=10pt]{standalone}
 \usepackage{pgfplots}
-\usetikzlibrary{patterns}
+\usetikzlibrary{patterns, backgrounds}
 
 \begin{document}
-\begin{tikzpicture}
+\begin{tikzpicture}[background rectangle/.style={fill=white}, show background rectangle]
   \begin{axis}[
     samples = 100,
     axis lines=middle,
@@ -14,7 +14,7 @@
     ymin=-5,
     ymax=5,
     xmin=-5,
-    xmax=5,
+    xmax=5, 
   ]
   % Random dots
   \addplot+[

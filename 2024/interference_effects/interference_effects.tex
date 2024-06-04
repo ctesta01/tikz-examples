@@ -1,12 +1,13 @@
 \documentclass[tikz,margin=3.14mm, usenames, dvipsnames]{standalone}
 \usepackage{tikz}
-% \usepackage[dvipsnames]{xcolor}
+\usetikzlibrary{backgrounds}
 \begin{document}
 
 \begin{tikzpicture}[
     treated/.style={fill=YellowGreen!80!black!95, draw=black, thick},
     control/.style={fill=CornflowerBlue!40, draw=black, thick},
     font=\large\sffamily,
+    background rectangle/.style={fill=white}, show background rectangle
     ]
 
     % Clusters
