@@ -1,0 +1,35 @@
+\documentclass[tikz, margin=3.14mm]{standalone}
+\usetikzlibrary{backgrounds}
+
+\begin{document}
+\begin{tikzpicture}[scale = 2.5, font=\footnotesize\sffamily,
+    background rectangle/.style={fill=white}, show background rectangle]
+
+    \node [fill = red!20, circle, inner sep = 2pt] (0) at (0.015, 0.562) {0};
+    \node [fill = red!20, circle, inner sep = 2pt] (1) at (0.506, 0.978) {1};
+    \node [fill = red!20, circle, inner sep = 2pt] (2) at (0.998, 0.976) {2};
+    \node [fill = red!20, circle, inner sep = 2pt] (3) at (1.498, 0.981) {3};
+    \node [fill = red!20, circle, inner sep = 2pt] (4) at (0.996, 0.551) {4};
+    \node [fill = red!20, circle, inner sep = 2pt] (5) at (1.987, 0.555) {5};
+    \node [fill = red!20, circle, inner sep = 2pt] (6) at (0.504, 0.128) {6};
+    \node [fill = red!20, circle, inner sep = 2pt] (7) at (1.002, 0.128) {7};
+    \node [fill = red!20, circle, inner sep = 2pt] (8) at (1.494, 0.130) {8};
+    
+    \draw [-latex, draw=red] (0) -- (1) node [font=\tiny\itshape\sffamily, midway, left] {4};
+    \draw [-latex, draw=red] (0) -- (6) node [font=\tiny\itshape\sffamily, midway, left] {7};
+    \draw (1) -- (6) node [font=\tiny\itshape\sffamily, midway, left]  {11};
+    \draw [-latex, draw=red] (1) -- (2) node [font=\tiny\itshape\sffamily, midway, above] {9};
+    \draw (1) -- (7) node [font=\tiny\itshape\sffamily, midway, left] {20};
+    \draw [-latex, draw=red] (2) -- (4) node [font=\tiny\itshape\sffamily, midway, left] {2};
+    \draw [-latex, draw=red] (2) -- (3) node [font=\tiny\itshape\sffamily, midway, above] {6};
+    \draw (3) -- (4) node [font=\tiny\itshape\sffamily, midway, left] {10};
+    \draw [-latex, draw=red] (3) -- (5) node [font=\tiny\itshape\sffamily, midway, right] {5};
+    \draw (4) -- (5) node [font=\tiny\itshape\sffamily, midway, above] {15};
+    \draw (4) -- (7) node [font=\tiny\itshape\sffamily, midway, left] {1};
+    \draw (4) -- (8) node [font=\tiny\itshape\sffamily, midway, right] {5};
+    \draw (5) -- (8) node [font=\tiny\itshape\sffamily, midway, right] {12};
+    \draw [-latex, draw=red] (6) -- (7) node [font=\tiny\itshape\sffamily, midway, below] {7};
+    \draw [-latex, draw=red] (7) -- (8) node [font=\tiny\itshape\sffamily, midway, below] {3};
+    \end{tikzpicture}
+
+\end{document}

@@ -1,0 +1,75 @@
+\documentclass[tikz, margin=3.14mm]{standalone}
+\usetikzlibrary{backgrounds, math}
+
+\begin{document}
+\begin{tikzpicture}[scale=.5, 
+    background rectangle/.style={fill=white},
+    show background rectangle
+    ]
+    \node {0} [sibling distance=100mm]
+      child {node {1} [sibling distance=30mm] 
+        child {node {4} [sibling distance=10mm]
+          child {node {13}}
+          child {node {14}}
+          child {node {15}}
+        }
+        child {node {5} [sibling distance=10mm]
+          child {node {16}}
+          child {node {17}}
+          child {node {18}}
+        }
+        child {node {6} [sibling distance=10mm]
+          child {node {19}}
+          child {node {20}}
+          child {node {21}}
+        }
+      }
+      child {node {2} [sibling distance=30mm]
+        child {node {7} [sibling distance=10mm]
+          child {node {22}}
+          child {node {23}}
+          child {node {24}}
+        }
+        child {node {8} [sibling distance=10mm]
+          child {node {25}}
+          child {node {26}}
+          child {node {27}}
+        }
+        child {node {9} [sibling distance=10mm]
+          child {node {28}}
+          child {node {29}}
+          child {node {30}}
+        }
+      }
+      child {node {3} [sibling distance=30mm]
+        child {node {10}  [sibling distance=10mm]
+          child {node {31}}
+          child {node {32}}
+          child {node {33}}
+        }
+        child {node {11} [sibling distance=10mm]
+          child {node {34}}
+          child {node {35}}
+          child {node {36}}
+        }
+        child {node {12} [sibling distance=10mm]
+          child {node {37}}
+          child {node {38}}
+          child {node {39}}
+        }
+      };
+    
+      % create grid array for the nodes 
+      \draw[step=1cm,gray,very thin] (10,0) grid (21,1);
+    
+      \foreach \x in {0,1,2,3,4,5,6,7,8,9}
+        \tikzmath{ 
+          \z = (\x) + 10 + .5;
+        }
+        \node at (\z, .5) {\x};
+      \node at (20.5, .5) {...};
+      
+      \draw [->] (1.75, 0.5) to [bend left = 50] (11, 1.5);
+    
+    \end{tikzpicture}
+\end{document}

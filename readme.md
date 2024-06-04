@@ -182,7 +182,7 @@ Semidefiniteness.
 </a>
 </center>
 
-Geometric random variables. 
+Geometric random variables model the probability of getting k failures before the rth success. 
 
 --- 
 
@@ -246,4 +246,72 @@ Bivariate normal distribution.
 Diagram of a covariance matrix. 
 
 --- 
+
+<center>
+<a href="2024/log_likelihood/figure.tex">
+<img align='center' src="2024/log_likelihood/figure.svg" width='85%' />
+</a>
+</center>
+
+A log-likelihood with an inclusive boundary. 
+
+--- 
+
+<center>
+<a href="2024/samples_epsilon_away/figure2.tex">
+<img align='center' src="2024/samples_epsilon_away/figure2.svg" width='85%' />
+</a>
+</center>
+
+A log-likelihood with an inclusive boundary. 
+
+--- 
+
+<center>
+<a href="2024/ternary_tree/ternary_tree.tex">
+<img align='center' src="2024/ternary_tree/ternary_tree.svg" width='85%' />
+</a>
+</center>
+
+A log-likelihood with an inclusive boundary. 
+
+--- 
+
+<center>
+<a href="2024/graph_traversal/graph_traversal.tex">
+<img align='center' src="2024/graph_traversal/graph_traversal.svg" width='85%' />
+</a>
+</center>
+
+A log-likelihood with an inclusive boundary. 
+
+---
+
+<center>
+<a href="2024/posttreatment/posttreatment.tex">
+<img align='center' src="2024/posttreatment/posttreatment.svg" width='100%' />
+</a>
+</center>
+
+Censoring due to death dependent on posttreatment. 
+
+--- 
+
+<center>
+<a href="2024/stratified_interference/stratified_interference.tex">
+<img align='center' src="2024/stratified_interference/stratified_interference.svg" width='100%' />
+</a>
+</center>
+
+Stratified interference. 
+
+--- 
+
+<center>
+<a href="2024/interference_effects/interference_effects.tex">
+<img align='center' src="2024/interference_effects/interference_effects.svg" width='100%' />
+</a>
+</center>
+
+Different causal estimators in the presence of partial/stratified interference. 
 

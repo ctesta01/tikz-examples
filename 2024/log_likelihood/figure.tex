@@ -1,0 +1,41 @@
+\documentclass[tikz, margin=3.14mm, dvipsnames]{standalone}
+
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usetikzlibrary{patterns}
+
+\begin{document}
+
+\begin{tikzpicture}
+\begin{axis}[
+  axis lines = left,
+  xlabel = \( \theta \),
+  ylabel = {},
+  xtick = {0, 1, 3, 4},
+  xticklabels = {, \( \max \{ |X_i| \} \), , },
+  ytick = \empty,
+  clip = false,
+  domain=0:1,
+  ymin=0,
+  ymax=1.25,
+  xmin=0,
+  xmax=4,
+  title={\textcolor{ForestGreen}{$L(\theta; \vec{X})$} }
+]
+
+% Add the decay line for 1/theta
+\addplot [-latex, thick, ForestGreen, domain=1:4, samples=100] {1/x};
+\addplot [thick, ForestGreen, domain=0:1, samples=100] {0};
+
+% Draw the asymptote
+\draw [dashed, gray] (axis cs:1,0) -- (axis cs:1,1.28);
+
+% Add labels
+% \node at (axis cs:0.5,0.5) [anchor=east] {\( \frac{1}{\theta} \)};
+\node [circle, draw=black, fill=ForestGreen, inner sep = 1.5pt] at (axis cs: 1,1) {};
+
+\end{axis}
+\end{tikzpicture}
+
+\end{document}
