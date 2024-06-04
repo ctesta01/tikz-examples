@@ -209,7 +209,7 @@ Major and minor axes of the ellipse described by the data covariance.
 
 <center>
 <a href="2023/matrix_and_scatter/standalone_scatter_with_marginal_histograms.tex">
-<img align='center' src="2023/matrix_and_scatter/standalone_scatter_with_marginal_histograms.svg" width='75%' />
+<img align='center' src="2023/matrix_and_scatter/standalone_scatter_with_marginal_histograms.svg" width='45%' />
 </a>
 </center>
 
@@ -219,7 +219,7 @@ Marginal histograms.
 
 <center>
 <a href="2023/determinant_and_rotation_3d/determinant_3d.tex">
-<img align='center' src="2023/determinant_and_rotation_3d/determinant_3d.svg" width='75%' />
+<img align='center' src="2023/determinant_and_rotation_3d/determinant_3d.svg" width='45%' />
 </a>
 </center>
 
@@ -229,7 +229,7 @@ Rotation in 3D.
 
 <center>
 <a href="2023/bivariate_normal/bivariate_normal.tex">
-<img align='center' src="2023/bivariate_normal/bivariate_normal.svg" width='85%' />
+<img align='center' src="2023/bivariate_normal/bivariate_normal.svg" width='55%' />
 </a>
 </center>
 
@@ -249,7 +249,7 @@ Diagram of a covariance matrix.
 
 <center>
 <a href="2024/log_likelihood/figure.tex">
-<img align='center' src="2024/log_likelihood/figure.svg" width='85%' />
+<img align='center' src="2024/log_likelihood/figure.svg" width='55%' />
 </a>
 </center>
 
