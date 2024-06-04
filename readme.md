@@ -288,6 +288,16 @@ A log-likelihood with an inclusive boundary.
 ---
 
 <center>
+<a href="2024/frangakis_rubin/posttreatment.tex">
+<img align='center' src="2024/frangakis_rubin/posttreatment.svg" width='100%' />
+</a>
+</center>
+
+A table from a paper by Frangakis and Rubin on principal stratification. 
+
+---
+
+<center>
 <a href="2024/posttreatment/posttreatment.tex">
 <img align='center' src="2024/posttreatment/posttreatment.svg" width='100%' />
 </a>
