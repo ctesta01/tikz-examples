@@ -1,13 +1,14 @@
 \documentclass[tikz,usenames,dvipsnames,border=10pt]{standalone}
 % \usepackage[dvipsnames]{xcolor}
 \usepackage{pgfplots}
-\pgfplotsset{compat=1.16}
+\usetikzlibrary{backgrounds}
+\pgfplotsset{compat=1.18}
 \usepgfplotslibrary{statistics}
 
 
 \begin{document}
 
-\begin{tikzpicture}
+\begin{tikzpicture}[background rectangle/.style={fill=white}, show background rectangle,]
 \begin{axis}[
   no markers, 
   domain=-4:4, 

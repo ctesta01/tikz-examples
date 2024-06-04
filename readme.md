@@ -209,7 +209,7 @@ Geometric random variables model the probability of getting k failures before th
 
 <p align="center">
 <a href="2023/math_lineage/math_lineage.tex">
-<img align='center' src="2023/math_lineage/math_lineage.svg" width='100%' />
+<img align='center' src="2023/math_lineage/math_lineage.png" width='100%' />
 </a>
 </p>
 
@@ -230,7 +230,7 @@ Major and minor axes of the ellipse described by the data covariance.
 
 <p align="center">
 <a href="2023/matrix_and_scatter/standalone_scatter_with_marginal_histograms.tex">
-<img align='center' src="2023/matrix_and_scatter/standalone_scatter_with_marginal_histograms.svg" width='45%' />
+<img align='center' src="2023/matrix_and_scatter/standalone_scatter_with_marginal_histograms.png" width='45%' />
 </a>
 </p>
 
@@ -260,7 +260,7 @@ Bivariate normal distribution.
 
 <p align="center">
 <a href="2023/covariance/covariance.tex">
-<img align='center' src="2023/covariance/covariance.svg" style="background-color: white;" width='85%' />
+<img align='center' src="2023/covariance/covariance.png" width='85%' />
 </a>
 </p>
 

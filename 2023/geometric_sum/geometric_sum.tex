@@ -1,10 +1,10 @@
 \documentclass[tikz, margin=3.14mm]{standalone}
 
 \usepackage{tikz}
-\usetikzlibrary{patterns, snakes}
+\usetikzlibrary{patterns, snakes, backgrounds}
 
 \begin{document}
-\begin{tikzpicture}[scale=1.5]
+\begin{tikzpicture}[scale=1.5, background rectangle/.style={fill=white}, show background rectangle,]
 
 \path (0,0) edge (7.1,0); % main numberline part 1
 \path (7.9,0) edge (10,0); % main numberline part 2

@@ -1,10 +1,11 @@
 \documentclass[tikz]{standalone}
 \usepackage{amsmath}
 \usepackage{pgfplots}
+\usetikzlibrary{backgrounds}
 \pgfplotsset{compat=newest}
 
 \begin{document}
-\begin{tikzpicture}
+\begin{tikzpicture}[background rectangle/.style={fill=white}, show background rectangle,]
 
 \begin{axis}[
     colormap/viridis,
