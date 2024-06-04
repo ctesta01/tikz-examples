@@ -1,0 +1,49 @@
+\documentclass[border=1mm]{standalone}
+
+\usepackage[dvipsnames]{xcolor}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18} % set pgf compatibility to 1.18
+
+\usetikzlibrary {arrows.meta} 
+
+\definecolor{myblue}{RGB}{85, 174, 220}
+\definecolor{myorange}{RGB}{222, 95, 31}
+
+
+\begin{document}
+
+\begin{tikzpicture}[width=3cm, height=3cm]
+  \begin{axis}[
+    xmin=-3.5, xmax=3.5,
+    ymin=-3.5, ymax=3.5,
+    axis lines=center,
+    axis equal,
+    grid=major,
+  ]
+  
+    % Scatterplot
+    \addplot[only marks, mark size=1.25pt, opacity=.5, myblue] table {data.csv};
+    
+
+\end{axis}
+
+    % PCA ellipse
+    \draw[rotate around={45:(3,3)},black, ultra thick] (3.15,2.6) ellipse ({sqrt(1.8)*1.5} and {sqrt(0.2)*1.5});
+        % Vectors for PCA
+
+\begin{axis}[
+  xmin=-3.5, xmax=3.5,
+    ymin=-3.5, ymax=3.5,
+    axis lines=center,
+    axis equal,
+    grid=major,
+    axis line style={draw=none},
+    tick style = {draw=none},
+]
+    \addplot[-latex, ultra thick, myorange, opacity=1] coordinates {(0, 0) (sqrt(1.8), sqrt(1.8))};
+    \addplot[-latex, ultra thick, myorange, opacity=1] coordinates {(0, 0) (-sqrt(0.2), sqrt(0.2))};
+\end{axis}
+
+\end{tikzpicture}
+
+\end{document}

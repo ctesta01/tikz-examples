@@ -1,0 +1,65 @@
+\documentclass[tikz, margin=3.14mm]{standalone}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usepgfplotslibrary{groupplots}
+\usepackage{amsmath, amssymb, amsfonts}
+
+\usetikzlibrary{arrows, decorations}
+
+\pgfplotsset{compat=1.18}
+\begin{document}
+
+\begin{tikzpicture}
+    \begin{groupplot}[
+        group style={
+            group size=3 by 1,
+            horizontal sep=2cm
+        },
+        xmin = 0,
+        ymin = -1,
+        xmax = 8,
+        width=5cm,
+        height=5cm,
+        axis lines=left,
+        yticklabels={,,},
+        xticklabels={,,},
+        ticks = none,
+        clip = false,
+        every axis plot/.append style = {
+          only marks,
+          blue,
+          fill opacity = .5,
+          clip = false,
+        },
+    ]
+        \nextgroupplot
+        \pgfplotstableread{data.txt}\mydata;
+        \addplot [] table {data.txt};
+        \draw (axis cs: 0, 4) edge [dashed] node[at end, above left] {$\bar y$} (8,4);
+        \node at (axis cs: 4.25,-.250) {Deviation in $y$ from $\bar y$};
+        \node at (axis cs: 4.25,9.50) {Used to Calculate};
+        \node at (axis cs: 4.25,8.50) {Total Sums of Squares};
+        \addplot [no marks, red, quiver={u=0, v=4-y, every arrow/.append style={-}}] table {data.txt};
+
+        \nextgroupplot
+        \addplot [] table {data.txt};
+        \draw (axis cs: 0, 0) edge [dashed] node[at end, below, shift={(axis cs: -.75,-.25)}] {$\hat y$} (6.8,6.8);
+        \addplot [no marks, red, quiver={u=0, v=x-y, every arrow/.append style={-}}] table {data.txt};
+        \node at (axis cs: 4.25,9.50) {Used to Calculate};
+        \node at (axis cs: 4.25,8.50) {Sum of Squared Errors};
+        \node at (axis cs: 4.25,-.250) {Deviation in $y$ from $\hat y$};
+        
+        \nextgroupplot
+        \addplot [] table {data.txt};
+        \draw (axis cs: 0, 4) edge [dashed] node[at end, above left] {$\bar y$} (8,4);
+        \draw (axis cs: 0, 0) edge [dashed] node[at end, below, shift={(axis cs: -.75,-.25)}] {$\hat y$} (6.8,6.8);
+        \node at (axis cs: 4.25,9.50) {Used to Calculate};
+        \node at (axis cs: 4.25,8.50) {Regression Sum of Squares};
+        \node at (axis cs: 4.25,-.250) {Difference in $\hat y$ from $\bar y$};
+        
+        % \addplot [no marks, red, quiver={u=0, v=x-y, every arrow/.append style={-}}] table {data.txt};
+        \addplot [no marks, purple, quiver={u=0, v=x-4, every arrow/.append style={-}}] table [y expr=4] {data.txt};        
+    \end{groupplot}
+\end{tikzpicture}
+
+\end{document}

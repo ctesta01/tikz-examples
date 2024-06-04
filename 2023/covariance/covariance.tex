@@ -1,0 +1,78 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{matrix,fit,positioning,calc}
+
+\begin{document}
+\begin{tikzpicture}[
+    matrixstyle/.style={
+        matrix of math nodes,
+        nodes in empty cells,
+        left delimiter={[},
+        right delimiter={]},
+        nodes={
+          % text center alignment from: 
+          % https://tex.stackexchange.com/questions/18759/vertical-align-in-tikz-matrix 
+          text height=#1/2+0.7em,
+          text depth=#1/2-0.7em
+          align = center,
+          minimum size=2em, anchor=center
+          }
+    },
+    heatmapstyle/.style={
+      matrix of nodes,
+      nodes in empty cells,
+      left delimiter = {},
+      right delimiter = {},
+      nodes = {
+        % enforced data cell size: 
+        % https://tex.stackexchange.com/questions/191239/how-to-force-nodes-to-have-the-same-size-in-tikz-matrices 
+        text width = 1.4em,
+        text depth = 1.4em,
+        }
+    },
+    varstyle/.style={fill=red!20},
+    covstyle/.style={fill=blue!20},
+    heatmap/.style={minimum size=0.6em, anchor=center}
+]
+
+
+% Covariance matrix
+\matrix[matrixstyle,right=3cm of data] (covariance) {
+    |[varstyle]| \sigma_{1}^2 & \sigma_{12} & \sigma_{13} \\
+    \sigma_{21} & \sigma_{2}^2 & |[covstyle]| \sigma_{23} \\
+    \sigma_{31} & \sigma_{32} &  \sigma_{3}^2 \\
+};
+\node[below=0.05cm of covariance] {$\text{Covariance}(X)$};
+
+% Data matrix heatmap
+
+\node [left=0.25cm of covariance, yscale=-1,
+  ] (data)
+  {\includegraphics[height=5.8em]{figures/covariance/heatmap_image/heatmap_image.pdf}};
+  
+\node[above=-.5cm of data] {$X^T$};
+
+% Data matrix heatmap
+
+\node [above=4cm of covariance,
+  rotate = 270,
+  anchor = center,
+  ] (data2)
+  {\includegraphics[width=8cm]{figures/covariance/heatmap_image/heatmap_image.pdf}};
+  
+\node[right=0.05cm of data2, shift={(1.25,4cm)}, align=left] {Original Data,\\$X$};
+
+
+
+
+% Variance label
+\node[draw, anchor=west, align=left, shift={(0.5cm,3cm)}, fill=red!20] (varlabel) at ($(covariance-2-2)+(3cm,0)$) 
+{Variance \\ $\sigma_{j}^2 = \frac{1}{n-1}\sum_{i=1}^n (x_{ij} - \overline{x_{j}})^2$};
+\draw[->] (varlabel.west) to [out=180,in=45] (covariance-1-1);
+
+% Covariance label
+\node[draw, anchor=west, align=left, fill=blue!20, shift={(-1cm,1cm)}] (covlabel) at ($(covariance-2-3)+(3cm,0)$) 
+{Covariance \\ $\sigma_{jk} = \frac{1}{n-1}\sum_{i=1}^n (x_{ij} - \overline{x_{j}})(x_{ik} - \overline{x_{k}})$};
+\draw[->] (covlabel.west) to [out=180,in=0] (covariance-2-3);
+\end{tikzpicture}
+\end{document}

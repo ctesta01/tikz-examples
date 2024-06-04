@@ -1,0 +1,53 @@
+\documentclass[tikz]{standalone}
+
+\usepackage{tikz}
+\usetikzlibrary{cd}
+
+\begin{document}
+
+% helpful advice for bending arrows: 
+% https://tex.stackexchange.com/questions/228724/how-do-i-make-tikz-make-a-curved-arrow-from-one-node-to-another-when-my-nodes-ar 
+
+% I tried a bunch of options for converting the PDF output to SVG but the best
+% ended up being to `brew install pdf2svg` and to run 
+% pdf2svg time_dependent_exposures.pdf time_dependent_exposures.svg 
+
+\tikzcdset{arrow style=tikz}
+\tikzset{>=latex}
+\begin{tikzcd}
+  L_0  % start row 1
+  \arrow[rr] 
+  \arrow[dr] 
+  \arrow[drrr] 
+  \arrow[rrrrd, bend left, in=135] 
+  \arrow[ddrr, bend right, in=200] & 
+  & 
+  L_1 
+  \arrow[drr]
+  \arrow[dr]
+  & 
+  & \\ % start row 2
+  &  
+  A_0 
+  \arrow[rrr, bend left = 20, in=140] 
+  \arrow[ur] 
+  \arrow[dr] 
+  \arrow[rr] & 
+  & A_1 
+  \arrow[r] & 
+  Y \\ % start row 3 
+  U_0 
+  \arrow[uu] 
+  \arrow[uurr, bend left=40, in = 160] 
+  \arrow[ur]
+  \arrow[rr]
+  \arrow[rrru]
+  \arrow[rrrru, bend right] & 
+  & 
+  U_1 
+  \arrow[uu] 
+  \arrow[ur]
+  \arrow[rru] & 
+  & \\ 
+\end{tikzcd}
+\end{document}

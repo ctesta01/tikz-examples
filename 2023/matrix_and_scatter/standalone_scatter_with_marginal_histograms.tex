@@ -1,0 +1,56 @@
+\documentclass[border=1mm]{standalone}
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18} % set pgf compatibility to 1.18
+
+\begin{document}
+
+\begin{tikzpicture}[
+    /pgfplots/scale only axis,
+    /pgfplots/width=3cm,
+    /pgfplots/height=3cm
+]
+
+% The scatterplot
+\begin{axis}[
+    name=main axis, % Name the axis, so we can position the histograms relative to this axis
+    xlabel = $x$, ylabel = $y$,
+    title = {Scatterplot and Marginal\\Histograms of Original Data},
+ title style={at={(.725,1.8)},anchor=north,align=center},
+]
+\addplot [only marks, mark size=1.25, opacity=.5] table {data.csv};
+\end{axis}
+
+% The histogram for the x axis
+\begin{axis}[
+    anchor=south west,
+    at=(main axis.north west),
+    height=1.5cm,
+    xtick=\empty,
+]
+\addplot [
+    hist={data=x}, % By default, the y values would be used for calculating the histogram
+    fill=gray!50,
+] table {data.csv};
+\end{axis}
+
+
+% The histogram for the y axis
+\begin{axis}[
+    anchor=north west,
+    at=(main axis.north east),
+    width=1.5cm,
+    ytick=\empty
+]
+\addplot [
+    % For swapping the x and y axis, we have to change a couple of options...
+    hist={handler/.style={xbar interval}}, % ... use bars instead of columns ...
+    x filter/.code=\pgfmathparse{rawy}, % ... interpret the x values of the histogram as y values 
+    y filter/.code=\pgfmathparse{rawx}, % ... and vice versa.
+    fill=gray!50,
+    ] table {data.csv};
+\end{axis}
+\end{tikzpicture}
+
+
+\end{document}

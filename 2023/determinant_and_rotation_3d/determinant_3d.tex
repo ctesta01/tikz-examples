@@ -1,0 +1,75 @@
+\documentclass[tikz,border=10pt]{standalone}
+\usepackage{tikz-3dplot}
+
+\begin{document}
+
+\tdplotsetmaincoords{60}{110}
+\begin{tikzpicture}[scale=2, tdplot_main_coords]
+
+    % Draw minor grid lines (0.2 step)
+
+    \begin{scope}[canvas is xy plane at z=0]
+    \draw[gray!30, ultra thin, step=0.2] (0,0) grid (1.2,1.2);
+    \end{scope}
+    
+    \begin{scope}[canvas is xz plane at y=0]
+    \draw[gray!30, ultra thin, step=0.2] (0,0) grid (1.2,1.2);
+    \end{scope}
+    
+    \begin{scope}[canvas is yz plane at x=0]
+    \draw[gray!30, ultra thin, step=0.2] (0,0) grid (1.2,1.2);
+    \end{scope}
+
+
+\draw[thick,->] (0,0,0) -- (1.2,0,0) node[anchor=north east]{$x$};
+\draw[thick,->] (0,0,0) -- (0,1.2,0) node[anchor=north west]{$y$};
+\draw[thick,->] (0,0,0) -- (0,0,1.2) node[anchor=south]{$z$};
+
+\draw[blue!50, thick, fill=blue!20,opacity=0.5, fill opacity = .2] (0,0,0) -- (1,0,0) -- (1,1,0) -- (0,1,0) -- cycle;
+\draw[blue!50, thick, fill=blue!20,opacity=0.5, fill opacity = .2] (0,0,0) -- (0,1,0) -- (0,1,1) -- (0,0,1) -- cycle;
+\draw[blue!50, thick, fill=blue!20,opacity=0.5, fill opacity = .2] (0,0,0) -- (1,0,0) -- (1,0,1) -- (0,0,1) -- cycle;
+\draw[blue!50, thick, fill=blue!20,opacity=0.5, fill opacity = .2] (1,0,0) -- (1,1,0) -- (1,1,1) -- (1,0,1) -- cycle;
+\draw[blue!50, thick, fill=blue!20,opacity=0.5, fill opacity = .2] (0,1,0) -- (1,1,0) -- (1,1,1) -- (0,1,1) -- cycle;
+\draw[blue!50, thick, fill=blue!20,opacity=0.5, fill opacity = .2] (0,0,1) -- (1,0,1) -- (1,1,1) -- (0,1,1) -- cycle;
+
+
+\coordinate (O) at (0,0,0);                         // original position (0,0,0)
+\coordinate (A) at (0.9330127, 0.2500000, -0.2588190);  // original position (1,0,0)
+\coordinate (B) at (-0.2588190, 0.9659258, 0.0000000);  // original position (0,1,0)
+\coordinate (C) at (0.2500000, 0.0669873, 0.9659258);  // original position (0,0,1)
+\coordinate (D) at (0.6741937, 1.2159258, -0.2588190);  // original position (1,1,0)
+\coordinate (E) at (1.1830127, 0.3169873, 0.7071068);  // original position (1,0,1)
+\coordinate (F) at (-0.008819045, 1.032913124, 0.965925826);  // original position (0,1,1)
+\coordinate (G) at (0.9241937, 1.2829131, 0.7071068);  // original position (1,1,1)
+
+\draw[->] (1,0,1) arc [start angle=-45,end angle=0,x radius=2.3,y radius=.68];
+
+\draw[->] (1,0,0) arc [start angle=-45,end angle=0,x radius=1.2,y radius=.56];
+\draw[->] (1,1,0) arc [start angle=-25,end angle=0,x radius=.9,y radius=.86];
+
+
+\draw[red!50, thick, fill=red!20,opacity=0.4, fill opacity = .3] (O) -- (A) -- (D) -- (B) -- cycle;
+\draw[red!50, thick, fill=red!20,opacity=0.4, fill opacity = .3] (O) -- (B) -- (F) -- (C) -- cycle;
+\draw[red!50, thick, fill=red!20,opacity=0.4, fill opacity = .3] (O) -- (A) -- (E) -- (C) -- cycle;
+\draw[red!50, thick, fill=red!20,opacity=0.4, fill opacity = .3] (A) -- (D) -- (G) -- (E) -- cycle;
+\draw[red!50, thick, fill=red!20,opacity=0.4, fill opacity = .3] (B) -- (D) -- (G) -- (F) -- cycle;
+\draw[red!50, thick, fill=red!20,opacity=0.4, fill opacity = .3] (C) -- (E) -- (G) -- (F) -- cycle;
+
+    \begin{scope}[plane origin = (C),plane x = (E), plane y = (F), canvas is plane]
+    \draw[red!30, ultra thin, step=0.05] (0,0) grid (1,1);
+    \end{scope}
+    
+    \begin{scope}[plane origin = (A),plane x = (D), plane y = (E), canvas is plane]
+    \draw[red!30, ultra thin, step=0.05] (0,0) grid (1,1);
+    \end{scope}
+    
+    \begin{scope}[plane origin = (O),plane x = (A), plane y = (C), canvas is plane]
+    \draw[red!30, ultra thin, step=0.5] (0,0) grid (1,1);
+    \end{scope}
+    
+    \begin{scope}[plane origin = (O),plane x = (A), plane y = (C), canvas is plane]
+    \draw[red!30, ultra thin, step=0.5] (0,0) grid (1,1);
+    \end{scope}
+
+\end{tikzpicture}
+\end{document}

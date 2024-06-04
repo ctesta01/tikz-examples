@@ -1,0 +1,77 @@
+\documentclass[tikz]{standalone}
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+\begin{filecontents*}{temp.dat}
+     0 0 0.489154074573889
+     0 1 0.42535991105251
+     0 2 0.602791605284438
+     
+     1 0 0.56552252639085
+     1 1 0.21981893084012
+     1 2 0.680134109919891
+     
+     2 0 0.574672629125416
+     2 1 0.263183466158807
+     2 2 0.478243796853349
+     
+     3 0 0.618092632386833
+     3 1 0.343431783141568
+     3 2 0.042011009529233
+     
+     4 0 0.0462807209696621
+     4 1 0.962812434649095
+     4 2 0.0132674637716264
+     
+     5 0 0.506267985096201
+     5 1 0.179403752554208
+     5 2 0.571101228008047
+     
+     6 0 0.00973027269355953
+     6 1 0.251007314072922
+     6 2 0.757057297741994
+     
+     7 0 0.710495315957814
+     7 1 0.443832918768749
+     7 2 0.262694333679974
+     
+     8 0 0.551993418484926
+     8 1 0.828823313117027
+     8 2 0.770748630631715
+     
+     9 0 0.515447712270543
+     9 1 0.51525420579128
+     9 2 0.180299312109128
+\end{filecontents*}
+
+\begin{document}
+    \begin{tikzpicture}
+        \begin{axis}[
+            view={0}{90},   % not needed for `matrix plot*' variant
+            xlabel=$x$,
+            ylabel=$y$,
+            colormap = {whiteblack}{color(0cm)  = (white);color(1cm) = (orange)},
+            colorbar style={
+                yticklabel style={
+                    /pgf/number format/.cd,
+                    fixed,
+                    precision=1,
+                    fixed zerofill,
+                },
+            },
+            width = 5cm,
+            height = 3cm,
+            axis lines=none,
+            enlargelimits=true,
+        ]
+            \addplot [
+              matrix plot*,
+              point meta=explicit,
+              x = column 1,
+              y = column 2,
+              z = column 3,
+            ] file [] {temp.dat};
+        \end{axis}
+    \end{tikzpicture}
+\end{document}
