@@ -133,7 +133,9 @@ Diagram describing the role of statistical methods in the scientific process.
 </a>
 </p>
 
-Probability density in a linear model.
+Probability density in a linear model. 
+
+Based on <https://pgfplots.net/heteroskedasticity-linear-regression/>
 
 --- 
 
