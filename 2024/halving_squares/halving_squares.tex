@@ -1,8 +1,9 @@
 \documentclass[margin=3.14mm]{standalone}
 \usepackage{tikz}
+\usetikzlibrary{backgrounds}
 
 \begin{document}
-\begin{tikzpicture}[scale=5]
+\begin{tikzpicture}[scale=5, background rectangle/.style={fill=white}, show background rectangle]
 
     % draw square
     \draw (0, 0) rectangle (1, 1);
