@@ -358,4 +358,4 @@ Different causal estimators in the presence of partial/stratified interference.
 </a>
 </p>
 
-Different causal estimators in the presence of partial/stratified interference. 
+Visual proof that $\sum_{i=1}^\infty 1/2^n = 1$. 
