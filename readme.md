@@ -43,6 +43,17 @@ while viewing the readme in other software with a dark mode such as VS Code. The
 is totally optional, and removing the tikz library and tikzpicture style settings 
 described above should remove it if you need to. 
 
+### Similar Projects
+
+  - [TikZ and PGF Examples from texample.net](https://texample.net/tikz/examples/)
+  - [Awesome TikZ by xiaohanyu (GitHub)](https://github.com/xiaohanyu/awesome-tikz)
+  - [tikz examples on Overleaf](https://www.overleaf.com/latex/examples/tagged/tikz)
+  - [TikZ Gallery by Lauren Williams](https://www.integral-domain.org/lwilliams/Resources/tikzsnippets.php)
+  - [Nice scientific pictures show off (tex.stackexchange)](https://tex.stackexchange.com/questions/158668/nice-scientific-pictures-show-off)
+  - [TikZ is All You Need (slides)](https://mkofinas.github.io/tikz_tutorial.pdf)
+  - [Walmes Zeviani - TikZ Gallery](http://leg.ufpr.br/~walmes/Tikz/)
+
+
 ## Examples 
 
 <p align="center">
@@ -61,7 +72,7 @@ Limit supremum and infimum illustrated.
 </a>
 </p>
 
-Delta & epsilon as commonly used in defining continuity. 
+$\delta$ & $\epsilon$ as commonly used in defining continuity. 
 
 --- 
 
@@ -151,7 +162,7 @@ Regression viewed as projection.
 
 <p align="center">
 <a href="2023/residual_decompositions/residual_decomposition.tex">
-<img align='center' src="2023/residual_decompositions/residual_decomposition.png" width='45%' />
+<img align='center' src="2023/residual_decompositions/residual_decomposition.png" width='80%' />
 </a>
 </p>
 
@@ -288,7 +299,7 @@ A log-likelihood with an inclusive boundary.
 </a>
 </p>
 
-Samples that are epsilon/sqrt(n) away from their limits, -theta to theta. 
+Sample observations that are $\epsilon/\sqrt{n}$ away from their limits, $-theta$ to $theta$. 
 
 --- 
 
