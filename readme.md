@@ -350,3 +350,12 @@ Stratified interference.
 
 Different causal estimators in the presence of partial/stratified interference. 
 
+--- 
+
+<p align="center">
+<a href="2024/halving_squares/halving_squares.tex">
+<img align='center' src="2024/halving_squares/halving_squares.svg" width='40%' />
+</a>
+</p>
+
+Different causal estimators in the presence of partial/stratified interference. 
