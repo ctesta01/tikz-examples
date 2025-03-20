@@ -370,3 +370,117 @@ Different causal estimators in the presence of partial/stratified interference.
 </p>
 
 Visual proof that $\sum_{n=1}^\infty 1/2^n = 1$. 
+
+--- 
+
+<p align="center">
+<a href="2024/sierpinski/sierpinski.tex">
+<img align='center' src="2024/sierpinski/sierpinski.svg" width='40%' />
+</a>
+</p>
+
+Sierpinski's triangle. 
+
+Based on replies to <https://tex.stackexchange.com/questions/119602/how-to-create-a-sierpinski-triangle-in-latex>
+
+---
+
+<p align="center">
+<a href="2024/convergence_from_below/convergence_from_below.tex">
+<img align='center' src="2024/convergence_from_below/convergence_from_below.svg" width='40%' />
+</a>
+</p>
+
+Convergence of polygons to the circle from below. 
+
+---
+<p align="center">
+<a href="2024/inscribing_method/inscribing_method.tex">
+<img align='center' src="2024/inscribing_method/inscribing_method.svg" width='40%' />
+</a>
+</p>
+
+The method of inscribing. 
+
+---
+
+<p align="center">
+<a href="2024/liminf/liminf3.tex">
+<img align='center' src="2024/liminf/liminf3.svg" width='40%' />
+</a>
+</p>
+
+The limit infimum. 
+
+---
+
+<p align="center">
+<a href="2024/limsup/limsup.tex">
+<img align='center' src="2024/limsup/limsup.svg" width='40%' />
+</a>
+</p>
+
+The limit supremum. 
+
+---
+
+<p align="center">
+<a href="2024/diagram_chase1/diagram_chase1.tex">
+<img align='center' src="2024/diagram_chase1/diagram_chase1.svg" width='40%' />
+</a>
+</p>
+
+A diagram chase. 
+
+---
+
+<p align="center">
+<a href="2024/diagram_chase2/diagram_chase2.tex">
+<img align='center' src="2024/diagram_chase2/diagram_chase2.svg" width='40%' />
+</a>
+</p>
+
+Another diagram chase. 
+
+---
+
+
+<p align="center">
+<a href="2024/extension/extension.tex">
+<img align='center' src="2024/extension/extension.svg" width='40%' />
+</a>
+</p>
+
+A set relation with annotation indicating a maximal extension. 
+
+---
+
+<p align="center">
+<a href="2024/extension_and_measure_zero/extension_and_measure_zero.tex">
+<img align='center' src="2024/extension_and_measure_zero/extension_and_measure_zero.svg" width='40%' />
+</a>
+</p>
+
+A complicated set diagram, like what a professor would draw on the board.
+
+---
+
+
+<p align="center">
+<a href="2024/ball_inside_a_ball/ball_inside_a_ball.tex">
+<img align='center' src="2024/ball_inside_a_ball/ball_inside_a_ball.svg" width='40%' />
+</a>
+</p>
+
+A ball inside a ball.
+
+---
+
+<p align="center">
+<a href="2024/sequence_of_simple_fns/sequence_of_simple_fns.tex">
+<img align='center' src="2024/sequence_of_simple_fns/sequence_of_simple_fns.svg" width='40%' />
+</a>
+</p>
+
+A sequence of simple functions approximating a complicated function.
+

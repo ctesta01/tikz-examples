@@ -1,0 +1,54 @@
+\documentclass[tikz, margin=3.14mm]{standalone}
+
+\usepackage{tikz}
+\usepackage{graphics}
+\usepackage{amsmath, amsfonts, amssymb, mathrsfs}
+
+\usetikzlibrary{shapes.geometric, positioning, shapes}
+
+\begin{document}
+\begin{tikzpicture}[yscale=1, xscale=1.5]
+    \node at (1, 0) {$B_1$};
+    \node at (1.5,0) {\tiny$\subseteq$};
+    \node at (2, 0) {$B_2$};
+    \node at (2.5,0) {\tiny$\subseteq$};
+    \node at (3, 0) {$B_3$};
+    \node at (3.5,0) {\tiny$\subseteq$};
+    \node at (4, 0) {$...$};
+    \node at (4.5,0) {\tiny$\subseteq$};
+    \node at (5, 0) {$B_m$};
+    \node at (5.5, 0) {\tiny$\subseteq$};
+    \node at (6.25, 0) {...};
+    \node at (7.25, 0) {\tiny$\subseteq$};
+    \node at (8, 0) {$A$};
+
+    \node at (0, -1) {$A_1$};
+    \node at (0, -1.5) {\tiny\scalebox{1}[1]{\rotatebox{-45}{$\subseteq$}}};
+    \node at (0, -2) {$A_2$};
+    \node at (0, -2.5) {\tiny\scalebox{1}[1]{\rotatebox{-45}{$\subseteq$}}};
+    \node at (0, -3) {$\vdots$};
+    \node at (0, -3.5) {\tiny\scalebox{1}[1]{\rotatebox{-45}{$\subseteq$}}};
+    \node at (0, -4) {$A_n$};
+    \node at (0, -4.5) {\tiny\scalebox{1}[1]{\rotatebox{-45}{$\subseteq$}}};
+    \node at (0, -5) {$\vdots$};
+    \node at (0, -5.6) {\tiny\scalebox{1}[1]{\rotatebox{-45}{$\subseteq$}}};
+    \node at (0, -6) {$A$};
+
+    \draw (.35, -4) -- (4.25, -4);
+    % \node [align=center] at (5.025, -4) {$A_n \cap B_m$};
+    \node (e) [ellipse, draw] at (5, -4) {$A_n \cap B_m$};
+    \draw (5, -.35) -- (5, -3.63);
+    \node [below right=of e.south east, xshift = -1.3cm, yshift=1cm] {$ \equiv C_{n,m} \in \mathscr F$};
+
+    \draw [-latex] (5.9, -4) -- (7.1, -4);
+    \draw [-latex] (5, -4.5) -- (5, -5.65);
+
+    \node at (7.8, -4) {$A_n \cap B \subseteq B$};
+    \node at (5, -6) {$A \cap B_n \subseteq B_m$};
+
+    \draw [-latex] (5.8, -6) -- (7.15, -6);
+    \node at (7.8, -6) {$A \cap B = A$};
+
+    \draw [rectangle] (0.5, -0.5) -- (8.55, -0.5) -- (8.55, -6.5) -- (0.5, -6.5) -- cycle;
+\end{tikzpicture}
+\end{document}
