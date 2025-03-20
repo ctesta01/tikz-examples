@@ -1,0 +1,55 @@
+\documentclass[tikz, margin=3.14mm]{standalone}
+
+% Variables to keep track of recursion depth, current position, and size
+\count5=0  % current recursion depth
+\count6=1  % current size
+\count7=0  % current x-coordinate
+\count8=0  % current y-coordinate
+
+% Recursive macro for drawing triangles
+\def\tri{
+  \ifnum\count5=\topDepth
+    % If we reach the maximum depth, draw a filled triangle
+    \draw 
+      (\the\numexpr\count7+2\relax,\the\count8) -| 
+      (\the\count7,\the\numexpr\count8+2\relax) -- 
+      cycle;
+  \else
+    \begingroup
+      % Increase recursion depth and scale down the triangle size
+      \advance\count5 by 1
+      \multiply\count6 by 2
+      
+      % Draw the lower-left triangle
+      \tri
+
+      % Draw the lower-right triangle
+      \begingroup
+        \advance\count7 by\count6
+        \tri
+      \endgroup
+      
+      % Draw the upper triangle
+      \begingroup
+        \advance\count8 by\count6
+        \tri
+      \endgroup
+    \endgroup
+  \fi
+}
+
+% Set up square root of 0.75 for transformation matrix
+\pgfmathsetmacro{\mySqrt}{sqrt(.75)}
+
+\begin{document}
+
+% Set the desired depth of recursion
+\def\topDepth{8}
+
+\begin{tikzpicture}[scale=3*.5^\topDepth, cm={1,0,.5,\mySqrt,(0,0)}]
+  % Start the recursion
+  \tri
+\end{tikzpicture}
+
+\end{document}
+
